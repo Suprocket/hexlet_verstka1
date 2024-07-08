@@ -39,6 +39,8 @@ body {
   font-size: 16px;
   line-height: 1.6em;
   color: #2a2626;
+  font-family: "Neucha";
+  font-weight: 400;
 }
 
 h1,
@@ -62,9 +64,31 @@ h3 {
   font-size: 34px;
 }
 
-section {
-  width: 1110px;
+header {
+  width: 100vh;
   margin: 0 auto;
+}
+
+header::before {
+  background-image: url(../images/background-pattern.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.1;
+}
+
+section::before {
+}
+
+.orange {
+  color: var(--main-color);
+}
+
+.bg-orange {
+  background-color: var(--main-color);
+}
+
+.container {
+  width: 1110px;
   padding: 100px 0px;
 }
 
